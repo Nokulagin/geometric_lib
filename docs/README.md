@@ -11,6 +11,6 @@ Library for calculating area and perimeter of basic geometric shapes
 
 ## Perimeter
 - Circle: P = 2πR
-- Rectangle: P = 2a + 2b
+- Rectangle: P = 2(a + b)
 - Square: P = 4a
 - Triangle: P = a + b + c

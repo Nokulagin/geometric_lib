@@ -1,50 +1,149 @@
 # Functions overview
 ## Circle (**`circle.py`**)
 
- - **`area(r)`** - calculates area of a circle with a given radius **r**
- ```python
- area(2) # returns 12.57
- ```
+- **`area(r)`**
 
- - **`perimeter(r)`** - calculates perimeter of a circle with a given radius **r**
- ```python
- perimeter(3) # returns 18.85
- ```
+Calculates area of a circle using given radius r  
+The formula used for calculations:  
+S = πR²
 
-## Square (**`square.py`**)
+**Arguments:**
+- r (number type) : radius of a circle
 
- - **`area(a)`** - calculates area of a square with a given side length **a**
- ```python
- area(2) # returns 4
- ```
+**Return value:**
+- area (number type) : area of a circle of radius r
 
- - **`perimeter(a)`** - calculates perimeter of a square with a given side length **a**
- ```python
- perimeter(3) # returns 12
- ```
+**Example:**
+```python
+area(5) # returns 78.54
+```
+
+- **`perimeter(r)`**
+
+Calculates perimeter of a circle using given radius r  
+The formula used for calculations:  
+P = 2πR
+
+**Arguments:**
+- r (number type) : radius of a circle
+
+**Return value:**
+- perimeter (number type) : perimeter of a circle of radius r
+
+**Example:**
+```python
+perimeter(5) # returns 15.71
+```
 
 ## Rectangle (**`rectangle.py`**)
 
- - **`area(a, b)`** - calculates area of a rectangle with a given side lengths **a** and **b**
- ```python
- area(2, 2) # returns 4
- ```
+- **`area(a, b)`**
 
- - **`perimeter(a, b)`** - calculates perimeter of a rectangle with a given side lengths **a** and **b**
- ```python
- perimeter(3, 2) # returns 12
- ```
+Calculates area of a rectangle using given side lengths a and b  
+The formula used for calculations:  
+S = ab
+
+**Arguments:**
+- a (number type) : side length of a rectangle
+- b (number type) : side length of a rectangle
+
+**Return value:**
+- area (number type) : area of the rectangle with side lengths a and b
+
+**Example:**
+```python
+area(5, 2) # returns 10
+```
+
+- **`perimeter(a, b)`**
+
+Calculates perimeter of a rectangle using given side lengths a and b  
+The formula used for calculations:  
+P = 2(a + b)
+
+**Arguments:**
+- a (number type) : side length of a rectangle
+- b (number type) : side length of a rectangle
+
+**Return value:**
+- perimeter (number type) : perimeter of the rectangle with side lengths a and b
+
+**Example:**
+```python
+perimeter(5, 2) # returns 14
+```
+
+## Square (**`square.py`**)
+
+- **`area(a)`**
+
+Calculates area of a square using given side length a  
+The formula used for calculations:  
+S = a²
+
+**Arguments:**
+- a (number type) : side length of a square
+
+**Return value:**
+- area (number type) : area of the square with side length a
+
+**Example:**
+```python
+area(5) # returns 25
+```
+
+- **`perimeter(a)`**
+
+Calculates perimeter of a square using given side length a  
+The formula used for calculations:  
+P = 4a
+
+**Arguments:**
+- a (number type) : side length of a square
+
+**Return value:**
+- perimeter (number type) : perimeter of the square with side length a
+
+**Example:**
+```python
+perimeter(5) # returns 20
+```
 
 ## Triangle (**`triangle.py`**)
 
- - **`area(a, h)`** - calculates area of a triangle with a given base length **a** and height length h
- ```python
- area(2, 1) # returns 1 
- ```
+- **`area(a, h)`**
 
- - **`perimeter(a, b, c)`** - calculates perimeter of a triangle with a given 
- side lengths **a**, **b**, **c**
- ```python
- perimeter(1, 2, 3) # returns 6
- ```
+Calculates area of a triangle using given base length a and height length h  
+The formula used for calculations:  
+S = ah/2
 
+**Arguments:**
+- a (number type) : base length of a triangle
+- h (number type) : height length of a triangle
+
+**Return value:**
+- area (number type) : area of the triangle with base length a and height length h
+
+**Example:**
+```python
+area(5, 2) # returns 5
+```
+
+- **`perimeter(a, b, c)`**
+
+Calculates perimeter of a triangle using given side lengths a, b, c  
+The formula used for calculations:  
+P = a + b + c
+
+**Arguments:**
+- a (number type) : side length of a triangle
+- b (number type) : side length of a triangle
+- c (number type) : side length of a triangle
+
+**Return value:**
+- perimeter (number type) : perimeter of the triangle with side lengths a, b, c
+
+**Example:**
+```python
+perimeter(5, 2, 4) # returns 11
+```

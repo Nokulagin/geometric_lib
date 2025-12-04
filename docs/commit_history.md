@@ -2,6 +2,7 @@
 
 | Commit hash | Message |
 | -------------- | --------------- |
+| dce23c4 | Added documentation |
 | dd04bf3 | Added triangle.py and fixed rectangle.py |
 | fd5faab | Added rectangle.py |
 | d078c8d | L-03: Docs added |
