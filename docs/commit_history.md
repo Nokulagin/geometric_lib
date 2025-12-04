@@ -2,6 +2,7 @@
 
 | Commit hash | Message |
 | -------------- | --------------- |
+| 2697d71 | Added tests |
 | dce23c4 | Added documentation |
 | dd04bf3 | Added triangle.py and fixed rectangle.py |
 | fd5faab | Added rectangle.py |

@@ -14,3 +14,17 @@ Library for calculating area and perimeter of basic geometric shapes
 - Rectangle: P = 2(a + b)
 - Square: P = 4a
 - Triangle: P = a + b + c
+
+## Tests
+
+Tests can be called using command:
+
+```shell
+python3 -m unittest your_python_file.py
+```
+
+To test all files use:
+
+```shell
+python3 -m unittest *.py
+```
