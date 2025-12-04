@@ -1,3 +1,5 @@
+import unittest
+
 
 def area(a, h):
     '''
@@ -17,6 +19,7 @@ def area(a, h):
     '''
     return a * h / 2
 
+
 def perimeter(a, b, c):
     '''
     Calculates perimeter of a triangle using given side lengths a, b, c
@@ -35,3 +38,41 @@ def perimeter(a, b, c):
             perimeter(5, 2, 4) -> returns 11
     '''
     return a + b + c
+
+
+class TriangleTestCase(unittest.TestCase):
+    def test_area_base_zero(self):
+        res = area(0, 2)
+        self.assertEqual(res, 0)
+
+    def test_area_height_zero(self):
+        res = area(2, 0)
+        self.assertEqual(res, 0)
+
+    def test_area_height_and_base_zero(self):
+        res = area(0, 0)
+        self.assertEqual(res, 0)
+
+    def test_area_nonzero_values(self):
+        res = area(2, 4)
+        self.assertEqual(res, 4)
+
+    def test_area_one_values(self):
+        res = area(1, 1)
+        self.assertEqual(res, 0.5)
+
+    def test_area_float_values(self):
+        res = area(0.2, 0.2)
+        self.assertAlmostEqual(res, 0.02)
+
+    def test_perimeter_sides_zero(self):
+        res = perimeter(0, 0, 0)
+        self.assertEqual(res, 0)
+
+    def test_perimeter_sides_nonzero(self):
+        res = perimeter(1, 2, 3)
+        self.assertEqual(res, 6)
+
+    def test_perimeter_float_values(self):
+        res = perimeter(0.1, 0.2, 0.3)
+        self.assertAlmostEqual(res, 0.6)
