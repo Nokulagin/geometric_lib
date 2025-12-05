@@ -55,6 +55,10 @@ class CircleTestCase(unittest.TestCase):
         res = area(0.1)
         self.assertAlmostEqual(res, math.pi * 0.01)
 
+    def test_area_negative_value(self):
+        with self.assertRaises(ValueError):
+            area(-1)
+
     def test_perimeter_radius_zero(self):
         res = perimeter(0)
         self.assertEqual(res, 0)
@@ -70,3 +74,7 @@ class CircleTestCase(unittest.TestCase):
     def test_perimeter_float_value(self):
         res = perimeter(0.1)
         self.assertAlmostEqual(res, math.pi * 0.2)
+
+    def test_perimeter_negative_value(self):
+        with self.assertRaises(ValueError):
+            perimeter(-1)
