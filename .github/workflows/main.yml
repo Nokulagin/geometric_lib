@@ -17,19 +17,19 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: Test square.py
-      continue-on-error: true
+      if: always() || failure()
       run: | 
         python -m unittest square.py
     - name: Test rectangle.py
-      continue-on-error: true
+      if: always() || failure()
       run: | 
         python -m unittest rectangle.py
     - name: Test triangle.py
-      continue-on-error: true
+      if: always() || failure()
       run: | 
         python -m unittest triangle.py
     - name: Test circle.py
-      continue-on-error: true
+      if: always() || failure()
       run: | 
         python -m unittest circle.py
 
@@ -44,18 +44,18 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: Test square.py
-      continue-on-error: true
+      if: always() || failure()
       run: | 
         python -m unittest square.py
     - name: Test rectangle.py
-      continue-on-error: true
+      if: always() || failure()
       run: | 
         python -m unittest rectangle.py
     - name: Test triangle.py
-      continue-on-error: true
+      if: always() || failure()
       run: | 
         python -m unittest triangle.py
     - name: Test circle.py
-      continue-on-error: true
+      if: always() || failure()
       run: | 
         python -m unittest circle.py
